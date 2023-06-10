@@ -1,3 +1,4 @@
 const mongoose=require("mongoose");
-const connection =mongoose.connect("mongodb+srv://borsejugal:jugalborse@cluster0.f1vsoq3.mongodb.net/google_notes?retryWrites=true&w=majority");
+require("dotenv").config()
+const connection =mongoose.connect(process.env.mongoURL);
 module.exports={connection}
