@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json());
 app.use("/users",userRouter)
 app.use("/notes",noteRouter)
-app.listen(4000,async()=>{
+app.listen(8080,async()=>{
     try {
         await connection
         console.log("server is running at port 4000")
